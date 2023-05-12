@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:contentDescription="Logo da Empresa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/btnClientes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:contentDescription="Área de Clientes"
+        android:onClick="clickClientes"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/menu_cliente" />
+
+    <ImageView
+        android:id="@+id/btnEmpresa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:contentDescription="Sobre a Empresa"
+        android:onClick="clickEmpresa"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/menu_empresa" />
+
+    <ImageView
+        android:id="@+id/btnServicos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:contentDescription="Área de Serviços"
+        android:onClick="clickServicos"
+        app:layout_constraintStart_toStartOf="@+id/btnClientes"
+        app:layout_constraintTop_toBottomOf="@+id/btnClientes"
+        app:srcCompat="@drawable/menu_servico" />
+
+    <ImageView
+        android:id="@+id/btnContato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:contentDescription="Área de Contato"
+        android:onClick="clickContato"
+        app:layout_constraintEnd_toEndOf="@+id/btnEmpresa"
+        app:layout_constraintTop_toBottomOf="@+id/btnEmpresa"
+        app:srcCompat="@drawable/menu_contato" />
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="614dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
